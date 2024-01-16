@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical"
+        android:padding="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titulo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_body" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tarea"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_body" />
+
+        <TextView
+            android:id="@+id/tv_date_limit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha límite:"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_body" />
+
+        <TextView
+            android:id="@+id/tv_date_creation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Creada:"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_body" />
+
+        <TextView
+            android:id="@+id/tv_date_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Completada:"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_body" />
+
+        <TextView
+            android:id="@+id/tv_realization_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiempo de realización:"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_body" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

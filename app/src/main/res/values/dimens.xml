@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    Generales-->
+    <dimen name="spacing_small">10dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_long">18dp</dimen>
+
+<!--    Textos-->
+    <dimen name="text_title">18sp</dimen>
+    <dimen name="text_subtitle">16sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_caption">12sp</dimen>
+</resources>

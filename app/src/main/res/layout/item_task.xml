@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_bgr"
+        android:padding="@dimen/spacing_small">
+
+        <CheckBox
+            android:id="@+id/chk_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:buttonTint="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_description"
+            app:layout_constraintEnd_toStartOf="@+id/btn_delete"
+            app:layout_constraintStart_toEndOf="@id/chk_task"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="@dimen/spacing_long"
+            tools:text="Titulo" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_body"
+            app:layout_constraintBottom_toTopOf="@+id/tv_date"
+            app:layout_constraintEnd_toStartOf="@+id/btn_delete"
+            app:layout_constraintStart_toEndOf="@id/chk_task"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            android:layout_marginEnd="@dimen/spacing_long"
+            tools:text="Descripción" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:maxLines="10"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_body"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_delete"
+            app:layout_constraintStart_toEndOf="@id/chk_task"
+            app:layout_constraintTop_toBottomOf="@id/tv_description"
+            android:layout_marginEnd="@dimen/spacing_long"
+            tools:text="Fecha" />
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_delete"
+            android:background="@color/item_bgr"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_edit"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="@dimen/spacing_small"/>
+
+        <ImageButton
+            android:id="@+id/btn_edit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_edit"
+            android:background="@color/item_bgr"
+            app:layout_constraintTop_toBottomOf="@id/btn_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="15dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
